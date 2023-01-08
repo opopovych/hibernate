@@ -33,7 +33,7 @@
 	</dependencies>
 	
 	<build>
-		<finalName>lesson-07</finalName>
+		<finalName>lesson-14</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
