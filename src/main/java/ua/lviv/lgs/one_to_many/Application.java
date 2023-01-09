@@ -39,6 +39,13 @@ public class Application {
 		Transaction transaction = session.beginTransaction();
 		session.save(post);
 		transaction.commit();
+		
+		Post postDB = (Post)session.get(Post.class, 1);
+		System.out.println(postDB + "---->" + postDB.getComments());
+	
+
+		Comment commentDB = (Comment) session.get(Comment.class, 2);
+		System.out.println(commentDB + "---->" + commentDB.getPost());
 
 
 
